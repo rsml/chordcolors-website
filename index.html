@@ -1,150 +1,228 @@
 <html><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chord Colors - Free Interactive Music Theory App for Guitar and Piano</title>
-<meta name="description" content="Explore music theory with Chord Colors, a free app featuring 140+ chords, 170+ scales, 320+ chord progressions, and 2100+ guitar chord voicings. Perfect for all skill levels!">
-<meta name="keywords" content="music theory, chord progressions, scales, guitar chords, piano chords, songwriting, music app">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chord Colors - Free Interactive Music Theory App for Guitar and Piano</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Chord Colors",
+      "operatingSystem": "iOS",
+      "applicationCategory": ["EducationalApplication", "MusicApplication"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Explore music theory with Chord Colors, a free educational music app featuring 140+ chords, 170+ scales, 320+ chord progressions, and 2100+ guitar chord voicings. Ideal for students, teachers, professionals, songwriters, pianists, guitarists, amateur musicians, and composers.",
+      "screenshot": "https://chordcolors.com/images/chord-colors-preview.jpg",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "100"
+      },
+      "educationalUse": ["Practice", "Self-Assessment", "Learning", "Teaching", "Composition"],
+      "learningResourceType": ["Visual", "Audio", "Interactive Resource"],
+      "interactivityType": "Active",
+      "skillLevel": ["Beginner", "Intermediate", "Advanced", "Professional"],
+      "educationalAlignment": {
+        "@type": "AlignmentObject",
+        "alignmentType": "teaches",
+        "educationalFramework": "Music Theory",
+        "targetName": "Chord and Scale Understanding"
+      },
+      "audience": [
+        {
+          "@type": "Audience",
+          "audienceType": "Students"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Teachers"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Professional Musicians"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Songwriters"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Piano Players"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Guitar Players"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Amateur Musicians"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Composers"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Music Teachers"
+        }
+      ],
+      "featureList": [
+        "140+ chords",
+        "170+ scales",
+        "320+ chord progressions",
+        "2100+ guitar chord voicings",
+        "Circle of Fifths visualization",
+        "Songwriting tools",
+        "Piano and guitar visualizations"
+      ]
+    }
+  </script>
+  <meta name="description" content="Explore music theory with Chord Colors, a free app featuring 140+ chords, 170+ scales, 320+ chord progressions, and 2100+ guitar chord voicings. Perfect for all skill levels!">
+  <meta name="keywords" content="music theory, chord progressions, scales, guitar chords, piano chords, songwriting, music app">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://chordcolors.app/">
-<meta property="og:title" content="Chord Colors - Free Interactive Music Theory App">
-<meta property="og:description" content="Explore 140+ chords, 170+ scales, and 320+ chord progressions. Perfect for guitarists, pianists, and songwriters of all levels.">
-<meta property="og:image" content="https://chordcolors.app/images/chord-colors-preview.png">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chordcolors.app/">
+  <meta property="og:title" content="Chord Colors - Free Interactive Music Theory App">
+  <meta property="og:description" content="Explore 140+ chords, 170+ scales, and 320+ chord progressions. Perfect for guitarists, pianists, and songwriters of all levels.">
+  <meta property="og:image" content="https://chordcolors.app/images/chord-colors-preview.png">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://chordcolors.app/">
-<meta property="twitter:title" content="Chord Colors - Free Interactive Music Theory App">
-<meta property="twitter:description" content="Explore 140+ chords, 170+ scales, and 320+ chord progressions. Perfect for guitarists, pianists, and songwriters of all levels.">
-<meta property="twitter:image" content="https://chordcolors.app/images/chord-colors-preview.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://chordcolors.app/">
+  <meta property="twitter:title" content="Chord Colors - Free Interactive Music Theory App">
+  <meta property="twitter:description" content="Explore 140+ chords, 170+ scales, and 320+ chord progressions. Perfect for guitarists, pianists, and songwriters of all levels.">
+  <meta property="twitter:image" content="https://chordcolors.app/images/chord-colors-preview.png">
 
-<link rel="canonical" href="https://chordcolors.app/">
+  <link rel="canonical" href="https://chordcolors.app/">
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const featureBoxes = document.querySelectorAll('.feature-box');
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const featureBoxes = document.querySelectorAll('.feature-box');
 
-      featureBoxes.forEach(box => {
-          box.addEventListener('mouseenter', function() {
-              const randomRotation = (Math.random() - 0.5) * 2; // Random value between -1 and 1
-              this.style.transform = `translateY(-3px) scale(1.01) rotate(${randomRotation}deg)`;
-              this.style.boxShadow = '0 6px 12px rgba(0,0,0,0.1)';
-          });
+        featureBoxes.forEach(box => {
+            box.addEventListener('mouseenter', function() {
+                const randomRotation = (Math.random() - 0.5) * 2; // Random value between -1 and 1
+                this.style.transform = `translateY(-3px) scale(1.01) rotate(${randomRotation}deg)`;
+                this.style.boxShadow = '0 6px 12px rgba(0,0,0,0.1)';
+            });
 
-          box.addEventListener('mouseleave', function() {
-              this.style.transform = 'translateY(0) scale(1) rotate(0deg)';
-              this.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
-          });
-      });
-  });
-</script>
+            box.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1) rotate(0deg)';
+                this.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+            });
+        });
+    });
+  </script>
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-  body {
-    font-family: 'Poppins', sans-serif;
-    -webkit-font-smoothing: antialiased;
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
 
-  }
-  .iphone-frame {
-    width: 400px;
-    height: 812px;
-    /* background: #1c1c1e; */
-    border-radius: 20px;
-    box-shadow: 0 4px 50px 20px rgba(0,0,0,0.6);
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.15);
-
-
-  }
-  .iphone-screen {
-    width: 100%;
-    height: 100%;
-    /* background: #fff; */
-    /* border-radius: 20px; */
-  }
-
-  .feature-box {
-      transition: all 0.15s ease-out;
-  }
-  .feature-box:hover {
-      transform: translateY(-3px) scale(1.02) rotate(0.25deg);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  }
-
-  iframe {
-    -webkit-font-smoothing: antialiased;
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  @media (max-width: 768px) {
+    }
     .iphone-frame {
       width: 400px;
-      height: 865px;
-    }
-  }
+      height: 812px;
+      /* background: #1c1c1e; */
+      border-radius: 20px;
+      box-shadow: 0 4px 50px 20px rgba(0,0,0,0.6);
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.15);
 
-  @media (max-width: 500px) {
-    .iphone-frame {
-      width: 360px;
-      height: 649px;
-    }
-  }
 
-  @media (max-width: 430px) {
-    .iphone-frame {
-      width: 340px;
-      height: 649px;
     }
-  }
+    .iphone-screen {
+      width: 100%;
+      height: 100%;
+      /* background: #fff; */
+      /* border-radius: 20px; */
+    }
 
-  @media (max-width: 340px) {
-    .iphone-frame {
-      width: 320px;
-      height: 649px;
+    .feature-box {
+        transition: all 0.15s ease-out;
     }
-  }
+    .feature-box:hover {
+        transform: translateY(-3px) scale(1.02) rotate(0.25deg);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
 
-  @media (max-width: 320px) {
-    .iphone-frame {
-      width: 300px;
-      height: 649px;
+    iframe {
+      -webkit-font-smoothing: antialiased;
+      border-radius: 20px;
+      overflow: hidden;
     }
-  }
+    @media (max-width: 768px) {
+      .iphone-frame {
+        width: 400px;
+        height: 865px;
+      }
+    }
 
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #0c0e14 !important;
-      color: #fdfeff !important;
+    @media (max-width: 500px) {
+      .iphone-frame {
+        width: 360px;
+        height: 649px;
+      }
     }
-    .bg-white {
-      background-color: #1e202b !important;
+
+    @media (max-width: 430px) {
+      .iphone-frame {
+        width: 340px;
+        height: 649px;
+      }
     }
-    .border-l-4 {
-      background-color: #0c0e14 !important;
+
+    @media (max-width: 340px) {
+      .iphone-frame {
+        width: 320px;
+        height: 649px;
+      }
     }
-    .text-gray-800 {
-      color: #f3f6fa !important;
+
+    @media (max-width: 320px) {
+      .iphone-frame {
+        width: 300px;
+        height: 649px;
+      }
     }
-    .text-gray-600 {
-      color: #f3f6fa !important;
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #0c0e14 !important;
+        color: #fdfeff !important;
+      }
+      .bg-white {
+        background-color: #1e202b !important;
+      }
+      .border-l-4 {
+        background-color: #0c0e14 !important;
+      }
+      .text-gray-800 {
+        color: #f3f6fa !important;
+      }
+      .text-gray-600 {
+        color: #f3f6fa !important;
+      }
+      .shadow-md, .shadow-sm, .shadow-2xl {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.18) !important;
+      }
+      .bg-gray-800 {
+        background-color: #050609 !important;
+      }
     }
-    .shadow-md, .shadow-sm, .shadow-2xl {
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.18) !important;
-    }
-    .bg-gray-800 {
-      background-color: #050609 !important;
-    }
-  }
-</style>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XD0CX13QXR');
-</script>
+  </style>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XD0CX13QXR');
+  </script>
 </head>
 <body class="bg-gray-100 text-gray-800">
   <header class="bg-white shadow-md">
