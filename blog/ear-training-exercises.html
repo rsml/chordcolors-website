@@ -40,14 +40,14 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
           const featureBoxes = document.querySelectorAll('.feature-box');
-  
+
           featureBoxes.forEach(box => {
               box.addEventListener('mouseenter', function() {
                   const randomRotation = (Math.random() - 0.5) * 2; // Random value between -1 and 1
                   this.style.transform = `translateY(-3px) scale(1.01) rotate(${randomRotation}deg)`;
                   this.style.boxShadow = '0 6px 12px rgba(0,0,0,0.1)';
               });
-  
+
               box.addEventListener('mouseleave', function() {
                   this.style.transform = 'translateY(0) scale(1) rotate(0deg)';
                   this.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
@@ -87,18 +87,22 @@
           box-shadow: 0 6px 12px rgba(0,0,0,0.1);
       }
 
+      .divider {
+        background-color: #F3F4F6
+      }
+
       @media (prefers-color-scheme: dark) {
         body {
           background-color: #0c0e14;
           color: #fdfeff;
         }
+        .divider {
+          background-color: #0c0e14;
+        }
         .bg-white {
           background-color: #1e202b !important;
         }
         .text-gray-800 {
-          color: #f3f6fa !important;
-        }
-        .text-gray-600 {
           color: #f3f6fa !important;
         }
         .exercise {
@@ -146,10 +150,10 @@
       <article>
         <h1 class="text-4xl font-bold mb-6 text-gray-800 dark:text-darkText">11 Ear Training Exercises with the Chord Colors App</h1>
 
-        <p class="text-xl mb-8 text-gray-600 dark:text-gray-300">Developing a keen ear is crucial for any musician. With the free Chord Colors app, you can enhance your ear training skills using interactive tools for chords, scales, and progressions. Let's explore 11 effective exercises you can do right in the app!</p>
-      <h2 class="text-3xl font-bold mb-6 text-gray-600 dark:text-gray-300">Why Use Chord Colors for Ear Training?</h2>
-      <p class="text-xl mb-4 text-gray-600 dark:text-gray-300">The Chord Colors app offers several features that make ear training fun and effective:</p>
-      <ul class="list-disc list-inside text-xl mb-8 text-gray-600 dark:text-gray-300">
+        <p class="text-xl mb-8 text-gray-800 dark:text-gray-300">Developing a keen ear is crucial for any musician. With the free Chord Colors app, you can enhance your ear training skills using interactive tools for chords, scales, and progressions. Let's explore 11 effective exercises you can do right in the app!</p>
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-300">Why Use Chord Colors for Ear Training?</h2>
+      <p class="text-xl mb-4 text-gray-800 dark:text-gray-300">The Chord Colors app offers several features that make ear training fun and effective:</p>
+      <ul class="list-disc list-inside text-xl mb-8 text-gray-800 dark:text-gray-300">
         <li>Interactive chord and scale playback</li>
         <li>Visual representations with color-coded notes</li>
         <li>A wide variety of chord types and voicings</li>
@@ -157,7 +161,7 @@
         <li>Circle of Fifths integration</li>
       </ul>
 
-      <h2 class="text-3xl font-bold mb-6 text-gray-600 dark:text-gray-300">11 Ear Training Exercises Using Chord Colors</h2>
+      <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-300">11 Ear Training Exercises Using Chord Colors</h2>
 
       <div class="p-6 bg-white border-l-4 border-blue-600 rounded-lg shadow-md feature-box" style="margin-bottom: 18px">
         <h3 class="text-2xl font-bold mb-2">1. Chord Quality Recognition</h3>
@@ -214,10 +218,10 @@
         <p>Play a chord in the app, then try to sing or identify specific tones within the chord (root, third, fifth, seventh). Use the visual representation to check your answers.</p>
       </div>
 
-      <h2 class="text-3xl font-bold my-6 text-gray-600 dark:text-gray-300">Conclusion</h2>
-      <p class="text-xl mb-8 text-gray-600 dark:text-gray-300">Consistent practice of these ear training exercises using the Chord Colors app will significantly improve your musical skills over time. Remember, ear training is a gradual process, so be patient and persistent. The app's interactive features and visual aids make the learning process more engaging and effective.</p>
+      <h2 class="text-3xl font-bold my-6 text-gray-800 dark:text-gray-300">Conclusion</h2>
+      <p class="text-xl mb-8 text-gray-800 dark:text-gray-300">Consistent practice of these ear training exercises using the Chord Colors app will significantly improve your musical skills over time. Remember, ear training is a gradual process, so be patient and persistent. The app's interactive features and visual aids make the learning process more engaging and effective.</p>
 
-      <p class="text-xl mb-8 text-gray-600 dark:text-gray-300">Start incorporating these exercises into your daily practice routine, and you'll soon notice improvements in your ability to recognize and reproduce musical elements by ear. Happy practicing!</p>
+      <p class="text-xl mb-8 text-gray-800 dark:text-gray-300">Start incorporating these exercises into your daily practice routine, and you'll soon notice improvements in your ability to recognize and reproduce musical elements by ear. Happy practicing!</p>
 
       <div class="text-center">
         <a href="https://apps.apple.com/us/app/chord-colors" target="_blank" rel="noopener noreferrer">
