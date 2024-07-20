@@ -215,6 +215,23 @@
         background-color: #050609 !important;
       }
     }
+    .emoji-container {
+        display: inline;
+    }
+    .emoji-right-hand {
+        display: none;
+    }
+    .emoji-down-hand {
+        display: inline;
+    }
+    @media (min-width: 768px) {
+        .emoji-right-hand {
+            display: inline;
+        }
+        .emoji-down-hand {
+            display: none;
+        }
+    }
   </style>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -259,7 +276,6 @@
         <img src="./images/combined_with_guitar.png" alt="Chord Colors app interface on iPhone and guitar" class="rounded-lg shadow-lg">
       </div>
     </section>
-
     <section id="features" class="bg-white py-16">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">Powerful Features 💪</h2>
@@ -308,10 +324,16 @@
 
     <section class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 mb-8 md:mb-0">
-        <h2 class="text-3xl font-bold mb-6 text-gray-800">Try It Out 👇</h2>
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">
+          Try It Out
+          <span class="emoji-container">
+            <span class="emoji-right-hand">👉</span>
+            <span class="emoji-down-hand">👇</span>
+          </span>
+        </h2>
         <p class="text-xl mb-8 text-gray-600">
           Chord Colors is a web app too!<br /><br />
-          (But the free iOS app is even better)
+          (The free iOS app is even better)
         </p>
         <a href="https://chordcolors.com" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Open Full Screen</a>
       </div>
@@ -355,4 +377,3 @@
   </footer>
 </body>
 </html>
-
