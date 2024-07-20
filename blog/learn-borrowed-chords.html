@@ -37,6 +37,24 @@
         },
       }
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const featureBoxes = document.querySelectorAll('.feature-box');
+
+          featureBoxes.forEach(box => {
+              box.addEventListener('mouseenter', function() {
+                  const randomRotation = (Math.random() - 0.5) * 2; // Random value between -1 and 1
+                  this.style.transform = `translateY(-3px) scale(1.01) rotate(${randomRotation}deg)`;
+                  this.style.boxShadow = '0 6px 12px rgba(0,0,0,0.1)';
+              });
+
+              box.addEventListener('mouseleave', function() {
+                  this.style.transform = 'translateY(0) scale(1) rotate(0deg)';
+                  this.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+              });
+          });
+      });
+    </script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
       body {
