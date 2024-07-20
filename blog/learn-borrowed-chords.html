@@ -43,7 +43,7 @@
 
           featureBoxes.forEach(box => {
               box.addEventListener('mouseenter', function() {
-                  const randomRotation = (Math.random() - 0.5) * 2; // Random value between -1 and 1
+                  const randomRotation = (Math.random() - 0.5) * 0.8; // Random value between -0.4 and 0.4
                   this.style.transform = `translateY(-3px) scale(1.01) rotate(${randomRotation}deg)`;
                   this.style.boxShadow = '0 6px 12px rgba(0,0,0,0.1)';
               });

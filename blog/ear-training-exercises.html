@@ -43,7 +43,7 @@
 
           featureBoxes.forEach(box => {
               box.addEventListener('mouseenter', function() {
-                  const randomRotation = (Math.random() - 0.5) * 2; // Random value between -1 and 1
+                  const randomRotation = (Math.random() - 0.5) * 0.8; // Random value between -0.4 and 0.4
                   this.style.transform = `translateY(-3px) scale(1.01) rotate(${randomRotation}deg)`;
                   this.style.boxShadow = '0 6px 12px rgba(0,0,0,0.1)';
               });
@@ -190,7 +190,7 @@
 
       <div class="p-6 bg-white border-l-4 border-green-600 rounded-lg shadow-md feature-box" style="margin-bottom: 18px">
         <h3 class="text-2xl font-bold mb-2">6. Scale Recognition</h3>
-        <p>Play different scales in the app and try to identify them by ear. Start with major and minor, then progress to more exotic scales.</p>
+        <p>Play different scales in the app and try to identify them by ear. Once you can do that, try to sing or hum each note in the scale right before you play it. Start with major and minor, then progress to more exotic scales.</p>
       </div>
 
       <div class="p-6 bg-white border-l-4 border-yellow-500 rounded-lg shadow-md feature-box" style="margin-bottom: 18px">
@@ -210,7 +210,7 @@
 
       <div class="p-6 bg-white border-l-4 border-indigo-600 rounded-lg shadow-md feature-box" style="margin-bottom: 18px">
         <h3 class="text-2xl font-bold mb-2">10. Melody Playback</h3>
-        <p>Create a simple melody using the scale player, then try to play it back on your instrument without looking at the app. Check your accuracy using the color-coded notes.</p>
+        <p>Create a simple melody using the scales page, then try to play it back on your instrument without looking at the app. Check your accuracy using the color-coded notes.</p>
       </div>
 
       <div class="p-6 bg-white border-l-4 border-green-600 rounded-lg shadow-md feature-box" style="margin-bottom: 18px">
