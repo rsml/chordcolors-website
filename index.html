@@ -1,516 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chord Colors: Unleash Your Musical Potential | Free Music Theory App for Piano and Guitar</title>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "Chord Colors",
-      "operatingSystem": "iOS",
-      "applicationCategory": ["EducationalApplication", "MusicApplication"],
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "description": "Unleash your musical potential with Chord Colors, the free app that transforms how you create, learn, and understand music. Perfect for songwriters, guitarists, and pianists of all levels.",
-      "screenshot": "https://chordcolors.com/images/chord-colors-preview.jpg",
-      "educationalUse": ["Practice", "Self-Assessment", "Learning", "Teaching", "Composition"],
-      "learningResourceType": ["Visual", "Audio", "Interactive Resource"],
-      "interactivityType": "Active",
-      "skillLevel": ["Beginner", "Intermediate", "Advanced", "Professional"],
-      "educationalAlignment": {
-        "@type": "AlignmentObject",
-        "alignmentType": "teaches",
-        "educationalFramework": "Music Theory",
-        "targetName": "Chord and Scale Understanding"
-      },
-      "audience": [
-        {
-          "@type": "Audience",
-          "audienceType": "Students"
-        },
-        {
-          "@type": "Audience",
-          "audienceType": "Teachers"
-        },
-        {
-          "@type": "Audience",
-          "audienceType": "Professional Musicians"
-        },
-        {
-          "@type": "Audience",
-          "audienceType": "Songwriters"
-        },
-        {
-          "@type": "Audience",
-          "audienceType": "Piano Players"
-        },
-        {
-          "@type": "Audience",
-          "audienceType": "Guitar Players"
-        },
-        {
-          "@type": "Audience",
-          "audienceType": "Amateur Musicians"
-        },
-        {
-          "@type": "Audience",
-          "audienceType": "Composers"
-        },
-        {
-          "@type": "Audience",
-          "audienceType": "Music Teachers"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Colors: Unleash Your Musical Potential | Free Music Theory App for Piano and Guitar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
         }
-      ],
-      "featureList": [
-        "140+ interactive chords for guitar and piano",
-        "170+ colorful music scales",
-        "320+ inspiring chord progressions",
-        "2100+ unique guitar chord voicings",
-        "Visual Circle of Fifths",
-        "Innovative songwriting tools",
-        "Seamless support for both piano and guitar"
-      ],
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    }
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Is Chord Colors really free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! Chord Colors is free to download and use. There is a one time in-app purchase to unlock some of the advanced features, but the core functionality is available at no cost."
+        .feature-box {
+            transition: all 0.3s ease-out;
         }
-      },{
-        "@type": "Question",
-        "name": "Can I use Chord Colors for both guitar and piano?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! Chord Colors is designed for both guitarists and pianists, offering a wide range of chords and chord progressions for both instruments. It's the perfect tool for songwriters and musicians of all levels."
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
-      },{
-        "@type": "Question",
-        "name": "How many chords and scales does Chord Colors offer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Chord Colors is packed with musical possibilities: over 140 chords, 140 scales, 320 chord progressions, and an impressive 2100+ guitar chord voicings. It's a vast playground for musical exploration and creativity."
-        }
-      },{
-        "@type": "Question",
-        "name": "Is Chord Colors suitable for beginners?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! Chord Colors is designed to be accessible and valuable for all skill levels, from complete beginners to advanced musicians. Its intuitive, visual approach to music theory makes learning enjoyable and less intimidating for newcomers, while still offering depth for even the most experienced players."
-        }
-      }]
-    }
-  </script>
-  <meta name="description" content="Unleash your musical potential with Chord Colors, the free app that transforms how you create, learn, and understand music. Perfect for songwriters, guitarists, and pianists of all levels.">
-  <meta name="keywords" content="music theory, chord progressions, scales, guitar chords, piano chords, songwriting, music app, visual learning">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://chordcolors.app/">
-  <meta property="og:title" content="Chord Colors: Unleash Your Musical Potential | Free Interactive Music Theory App">
-  <meta property="og:description" content="Explore music theory with 140+ chords, 140+ scales, and 320+ chord progressions. The ultimate tool for songwriters, guitarists, and pianists of all levels.">
-  <meta property="og:image" content="https://chordcolors.app/images/chord-colors-preview.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://chordcolors.app/">
-  <meta property="twitter:title" content="Chord Colors: Unleash Your Musical Potential | Free Interactive Music Theory App">
-  <meta property="twitter:description" content="Explore music theory with 140+ chords, 140+ scales, and 320+ chord progressions. The ultimate tool for songwriters, guitarists, and pianists of all levels.">
-  <meta property="twitter:image" content="https://chordcolors.app/images/chord-colors-preview.png">
-
-  <link rel="canonical" href="https://chordcolors.app/">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const featureBoxes = document.querySelectorAll('.feature-box');
-
-        featureBoxes.forEach(box => {
-            box.addEventListener('mouseenter', function() {
-                const randomRotation = (Math.random() - 0.5) * 2; // Random value between -1 and 1
-                this.style.transform = `translateY(-3px) scale(1.01) rotate(${randomRotation}deg)`;
-                this.style.boxShadow = '0 6px 12px rgba(0,0,0,0.1)';
-            });
-
-            box.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1) rotate(0deg)';
-                this.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
-            });
-        });
-    });
-  </script>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-    body {
-      /* font-family: 'Avenir', sans-serif; */
-      font-family: 'Poppins', sans-serif;
-      -webkit-font-smoothing: antialiased;
-      font-size: 17px
-    }
-    /* h1 {
-      font-family: 'Palatino', 'Book Antiqua' , serif;
-    } */
-    li {
-      margin-bottom: 6px;
-    }
-    .feature-box {
-      ul {
-        margin-left: 16px;
-      }
-    }
-    .iphone-frame {
-      width: 400px;
-      height: 812px;
-      border-radius: 20px;
-      box-shadow: 0 4px 50px 20px rgba(0,0,0,0.6);
-      overflow: hidden;
-      border: 1px solid rgba(0,0,0,0.15);
-    }
-    .iphone-screen {
-      width: 100%;
-      height: 100%;
-    }
-
-    .feature-box {
-        transition: all 0.15s ease-out;
-    }
-    .feature-box:hover {
-        transform: translateY(-3px) scale(1.02) rotate(0.25deg);
-        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    }
-
-    iframe {
-      -webkit-font-smoothing: antialiased;
-      border-radius: 20px;
-      overflow: hidden;
-    }
-    @media (max-width: 768px) {
-      .iphone-frame {
-        width: 400px;
-        height: 865px;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .iphone-frame {
-        width: 360px;
-        height: 649px;
-      }
-    }
-
-    @media (max-width: 430px) {
-      .iphone-frame {
-        width: 340px;
-        height: 649px;
-      }
-    }
-
-    @media (max-width: 340px) {
-      .iphone-frame {
-        width: 320px;
-        height: 649px;
-      }
-    }
-
-    @media (max-width: 320px) {
-      .iphone-frame {
-        width: 300px;
-        height: 649px;
-      }
-    }
-
-    .divider {
-      background-color: #F3F4F6
-    }
-
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: #0c0e14 !important;
-        color: #fdfeff !important;
-      }
-      .divider {
-        background-color: #0c0e14;
-      }
-      .bg-white {
-        background-color: #1e202b !important;
-      }
-      .border-l-4 {
-        background-color: #0c0e14 !important;
-      }
-      .bg-blog-box {
-        background-color: #0c0e14 !important;
-      }
-      .text-gray-800 {
-        color: #f3f6fa !important;
-      }
-      .text-gray-600 {
-        color: #f3f6fa !important;
-      }
-      .shadow-md, .shadow-sm, .shadow-2xl {
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.18) !important;
-      }
-      .bg-gray-800 {
-        background-color: #050609 !important;
-      }
-    }
-    .emoji-container {
-        display: inline;
-    }
-    .emoji-right-hand {
-        display: none;
-    }
-    .emoji-down-hand {
-        display: inline;
-    }
-    @media (min-width: 768px) {
-        .emoji-right-hand {
-            display: inline;
-        }
-        .emoji-down-hand {
-            display: none;
-        }
-    }
-  </style>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XD0CX13QXR');
-  </script>
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <header class="bg-white shadow-md">
-    <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
-      <div class="flex items-center">
-        <img src="./images/logo_header_final.png" alt="Chord Colors Logo" class="h-16 w-16 mr-3" loading="lazy">
-        <span class="font-bold text-3xl text-gray-800">Chord Colors</span>
-      </div>
-      <div>
-        <a href="https://itunes.apple.com/app/id1422598441" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-          Download Free App
-        </a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="container mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center">
-      <div class="md:w-1/2 mb-8 md:mb-0">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-800">
-          Unleash Your Creativity
-        </h1>
-        <p class="text-xl mb-8 text-gray-600">
-          Explore music theory visually, break free from creative blocks, and create songs that move people. Chord Colors is your key to musical inspiration and growth.
-        </p>
-        <ul class="text-xl mb-8 list-disc list-outside text-gray-600" style="margin-left: 20px;">
-          <li>Explore 140+ chords, 140+ scales, and 320+ progressions</li>
-          <li>Learn music theory visually - no sheet music required</li>
-          <li>Spark songwriting inspiration</li>
-          <li>Never get stuck on the same old chords again</li>
-          <li>Perfect for both guitar and piano</li>
-        </ul>
-        <a href="#features" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Discover Your New Sound</a>
-      </div>
-      <div class="md:w-1/2">
-        <img src="./images/combined_with_guitar.png" alt="Chord Colors app interface on iPhone with guitar, showcasing colorful chords and scales" class="rounded-lg" loading="lazy">
-      </div>
-    </section>
-
-    <section id="features" class="bg-white py-16">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">Explore and Compose Visually</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="p-6 bg-white border-l-4 border-blue-600 rounded-lg shadow-md feature-box">
-            <h3 class="font-bold text-2xl mb-4 text-gray-800">🎹 &nbsp;Endless Chord Possibilities</h3>
-            <p class="text-gray-600">Discover 140+ interactive chords and 2100+ guitar voicings. Break out of your comfort zone and find your unique sound.</p>
-          </div>
-          <div class="p-6 bg-white border-l-4 border-green-600 rounded-lg shadow-md feature-box">
-            <h3 class="font-bold text-2xl mb-4 text-gray-800">🎼 &nbsp;Colorful Scale Explorer</h3>
-            <p class="text-gray-600">Dive into 140+ scales from around the world. Create melodies that stand out.</p>
-          </div>
-          <div class="p-6 bg-white border-l-4 border-yellow-500 rounded-lg shadow-md feature-box">
-            <h3 class="font-bold text-2xl mb-4 text-gray-800">🎶 &nbsp;Inspiring Progressions</h3>
-            <p class="text-gray-600">Discover 320+ chord progressions organized by genre or length to kickstart your songwriting. Create and share your own unique progressions.</p>
-          </div>
-          <div class="p-6 bg-white border-l-4 border-red-600 rounded-lg shadow-md feature-box">
-            <h3 class="font-bold text-2xl mb-4 text-gray-800">🎸 &nbsp;Visual Music Theory</h3>
-            <p class="text-gray-600">Learn music theory intuitively with our color-coded system. No need for traditional notation – perfect for visual learners!</p>
-          </div>
-          <div class="p-6 bg-white border-l-4 border-purple-600 rounded-lg shadow-md feature-box">
-            <h3 class="font-bold text-2xl mb-4 text-gray-800">✍️ &nbsp;Songwriting Toolkit</h3>
-            <p class="text-gray-600">Find matching chords and scales, experiment with borrowed chords, and train your ear. Your complete songwriting companion.</p>
-          </div>
-          <div class="p-6 bg-white border-l-4 border-indigo-600 rounded-lg shadow-md feature-box">
-            <h3 class="font-bold text-2xl mb-4 text-gray-800">🌈 &nbsp;Intuitive Design</h3>
-            <p class="text-gray-600">Color-coded notes make complex music theory accessible and fun. Gain a deeper understanding of harmony by noticing patterns.</p>
-          </div>
+<body class="bg-gray-50 text-gray-900">
+    <header class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="./images/logo_header_final.png" alt="Chord Colors Logo" class="h-12 w-12 mr-3">
+            <span class="font-bold text-2xl text-gray-900">Chord Colors</span>
         </div>
-      </div>
-    </section>
+        <nav>
+            <a href="#features" class="text-gray-600 hover:text-gray-900 mx-4">Features</a>
+            <a href="#download" class="text-gray-600 hover:text-gray-900 mx-4">Download</a>
+            <a href="#blog" class="text-gray-600 hover:text-gray-900 mx-4">Blog</a>
+        </nav>
+    </header>
 
-    <section class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
-      <div class="md:w-1/2 mb-8 md:mb-0">
-        <h2 class="text-3xl font-bold mb-6 text-gray-800">
-          Experience the Magic&nbsp;
-          <span class="emoji-container">
-            <span class="emoji-right-hand">👉</span>
-            <span class="emoji-down-hand">👇</span>
-          </span>
-        </h2>
-        <p class="mb-8 text-gray-600">
-          Try Chord Colors right in your browser! Explore chords, scales, and progressions instantly.<br /><br />
-          (The free iOS app is even better)
-        </p>
-        <a href="https://chordcolors.com" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">Open Web Version Full Screen</a>
-      </div>
-      <div class="md:w-1/2 flex justify-center">
-        <div class="iphone-frame shadow-2xl">
-          <div class="iphone-screen shadow-2xl">
-            <iframe src="https://chordcolors.com" width="100%" height="100%" class="w-full h-full" style="border: none;" title="Chord Colors Web App Demo" loading="lazy"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TODO once I have good testimonials -->
-    <!-- <section id="testimonials" class="bg-white dark:bg-gray-800 py-16">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">What Musicians Are Saying</h2>
-        <div class="space-y-8 max-w-2xl mx-auto">
-          <blockquote class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 border-l-4 border-blue-600 feature-box">
-            <p class="text-gray-600 dark:text-gray-300 mb-4">"Chord Colors has completely transformed my songwriting process. I'm no longer stuck using the same old chords!"</p>
-            <footer class="font-bold text-gray-800 dark:text-white">
-              <span class="text-blue-600 dark:text-blue-400">—</span> Sarah K., Guitarist
-            </footer>
-          </blockquote>
-
-          <blockquote class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 border-l-4 border-green-600 feature-box">
-            <p class="text-gray-600 dark:text-gray-300 mb-4">"As a visual learner, this app has made music theory so much more accessible and fun. I finally understand the circle of fifths!"</p>
-            <footer class="font-bold text-gray-800 dark:text-white">
-              <span class="text-green-600 dark:text-green-400">—</span> Mike T., Piano Player
-            </footer>
-          </blockquote>
-
-          <blockquote class="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 border-l-4 border-yellow-500 feature-box">
-            <p class="text-gray-600 dark:text-gray-300 mb-4">"I use Chord Colors every day for inspiration. It's like having a music theory expert in my pocket."</p>
-            <footer class="font-bold text-gray-800 dark:text-white">
-              <span class="text-yellow-500 dark:text-yellow-400">—</span> Alex R., Songwriter
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </section> -->
-
-    <section id="download" class="bg-blue-600 py-16">
-      <div class="container mx-auto px-6 text-center">
-        <!-- <h2 class="text-3xl font-bold mb-6 text-white">Ready to Transform Your Music? ✨</h2>
-        <p class="mb-8 text-white">
-          Join thousands of musicians who've unlocked their potential with Chord Colors.
-        </p> -->
-        <h2 class="text-3xl font-bold mb-6 text-white">Download Free App</h2>
-        <p class="text-2xl text-white">
-          <!-- <b>Download for Free</b><br /> -->
-          <a href="https://itunes.apple.com/app/id1422598441" target="_blank" rel="noopener noreferrer">
-            <img style="padding-top: 8px" src="./images/download_black.svg" alt="Download Chord Colors on the App Store" class="inline-block h-16" loading="lazy">
-          </a>
-        </p>
-      </div>
-    </section>
-
-    <section id="faq" class="container mx-auto px-6 py-16">
-      <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">Frequently Asked Questions</h2>
-      <div class="space-y-8">
-        <div>
-          <h3 class="text-xl font-bold mb-2 text-gray-800">Is Chord Colors really free?</h3>
-          <p class="text-gray-600">Absolutely! Chord Colors is free to download and use. There is a one time in-app purchase to unlock some of the advanced features, but the core functionality is available at no cost.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-2 text-gray-800">Do I need to know music theory to use Chord Colors?</h3>
-          <p class="text-gray-600">Not at all! Chord Colors is designed to be intuitive for beginners while still offering depth for advanced musicians. The unique visual approach makes learning music theory more fun and accessible.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-2 text-gray-800">Can I use Chord Colors offline?</h3>
-          <p class="text-gray-600">Yes, once you've downloaded the app, you can use all of Chord Colors' features offline. Perfect for when inspiration strikes, no matter where you are!</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="blog" class="bg-white py-16">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">Music Theory Blog</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <article class="bg-blog-box rounded-lg shadow-md overflow-hidden border-t-4 border-blue-600 flex flex-col h-full cursor-pointer" onclick="window.location='./blog/common-chord-progressions.html';">
-            <div class="p-6 flex flex-col h-full">
-              <h3 class="font-bold text-xl mb-2 text-gray-800">9 Chord Progressions Every Musician Should Know</h3>
-              <p class="text-gray-600 mb-4 flex-grow">Discover essential chord progressions that will enhance your songwriting and improvisation skills across various musical genres.</p>
-              <a href="./blog/common-chord-progressions.html" class="inline-flex items-center justify-between bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 mt-auto">
-                <span>Explore Progressions</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a>
+    <main>
+        <section class="bg-gray-100 py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-5xl font-bold mb-6 text-gray-900">Unleash Your Creativity</h1>
+                    <p class="text-xl mb-10 text-gray-600">Explore music theory interactively – Packed with features for all skill levels</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://itunes.apple.com/app/id1422598441" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition duration-300 shadow-md hover:shadow-lg">
+                            Download App
+                        </a>
+                        <a href="#features" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-4 px-8 border border-gray-400 rounded-full shadow-md hover:shadow-lg">
+                            Explore Features
+                        </a>
+                    </div>
+                    <div class="mt-4 flex justify-center space-x-4">
+                        <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 18H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
-          </article>
-          <article class="bg-blog-box rounded-lg shadow-md overflow-hidden border-t-4 border-green-600 flex flex-col h-full cursor-pointer" onclick="window.location='./blog/ear-training-exercises.html';">
-            <div class="p-6 flex flex-col h-full">
-              <h3 class="font-bold text-xl mb-2 text-gray-800">11 Ear Training Exercises to Improve Your Musical Skills</h3>
-              <p class="text-gray-600 mb-4 flex-grow">Enhance your ability to recognize chords, intervals, and melodies with these practical ear training techniques.</p>
-              <a href="./blog/ear-training-exercises.html" class="inline-flex items-center justify-between bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 mt-auto">
-                <span>Explore Exercises</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </article>
-          <article class="bg-blog-box rounded-lg shadow-md overflow-hidden border-t-4 border-purple-600 flex flex-col h-full cursor-pointer" onclick="window.location='./blog/learn-borrowed-chords.html';">
-            <div class="p-6 flex flex-col h-full">
-              <h3 class="font-bold text-xl mb-2 text-gray-800">Explore Borrowed Chords</h3>
-              <p class="text-gray-600 mb-4 flex-grow">Learn how to use the Chord Colors app to experiment with borrowed chords and expand your harmonic palette.</p>
-              <a href="./blog/learn-borrowed-chords.html" class="inline-flex items-center justify-between bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 mt-auto">
-                <span>Discover Modal Mixture</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
+        </section>
 
-  <footer class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto px-6 text-center">
-      <div class="mt-4 space-x-4">
-        <a href="https://github.com/rsml/chordcolors" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 inline-block">
-          <svg class="inline-block w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          GitHub
-        </a>
-        <a href="#" class="text-blue-400 hover:text-blue-300">Privacy Policy</a>
-        <a href="#" class="text-blue-400 hover:text-blue-300">Terms of Service</a>
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">Explore and Compose Visually</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="feature-box bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-600">
+                        <h3 class="font-bold text-xl mb-4">🎹 Endless Chord Possibilities</h3>
+                        <p class="text-gray-600">Discover 140+ interactive chords and 2100+ guitar voicings. Break out of your comfort zone and find your unique sound.</p>
+                    </div>
+                    <div class="feature-box bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-600">
+                        <h3 class="font-bold text-xl mb-4">🎼 Colorful Scale Explorer</h3>
+                        <p class="text-gray-600">Dive into 140+ scales from around the world. Create melodies that stand out.</p>
+                    </div>
+                    <div class="feature-box bg-white rounded-lg shadow-lg p-6 border-l-4 border-yellow-500">
+                        <h3 class="font-bold text-xl mb-4">🎶 Inspiring Progressions</h3>
+                        <p class="text-gray-600">Discover 320+ chord progressions organized by genre or length to kickstart your songwriting. Create and share your own unique progressions.</p>
+                    </div>
+                    <div class="feature-box bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-600">
+                        <h3 class="font-bold text-xl mb-4">🎸 Visual Music Theory</h3>
+                        <p class="text-gray-600">Learn music theory intuitively with our color-coded system. No need for traditional notation – perfect for visual learners!</p>
+                    </div>
+                    <div class="feature-box bg-white rounded-lg shadow-lg p-6 border-l-4 border-purple-600">
+                        <h3 class="font-bold text-xl mb-4">✍️ Songwriting Toolkit</h3>
+                        <p class="text-gray-600">Find matching chords and scales, experiment with borrowed chords, and train your ear. Your complete songwriting companion.</p>
+                    </div>
+                    <div class="feature-box bg-white rounded-lg shadow-lg p-6 border-l-4 border-indigo-600">
+                        <h3 class="font-bold text-xl mb-4">🌈 Intuitive Design</h3>
+                        <p class="text-gray-600">Color-coded notes make complex music theory accessible and fun. Gain a deeper understanding of harmony by noticing patterns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-blue-600 py-24 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-8">Ready to Transform Your Music?</h2>
+                <p class="text-2xl mb-10">Join thousands of musicians who've unlocked their potential with Chord Colors.</p>
+                <a href="https://itunes.apple.com/app/id1422598441" class="bg-white text-blue-600 font-bold py-5 px-10 rounded-full transition duration-300 inline-block hover:bg-gray-100 text-xl shadow-md hover:shadow-lg">
+                    Download Free App
+                </a>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 18H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="h-10 w-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">Music Theory Blog</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-blue-600">
+                        <img src="./images/chord-progressions.jpg" alt="Chord Progressions" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">9 Chord Progressions Every Musician Should Know</h3>
+                            <p class="text-gray-600 mb-4">Discover essential chord progressions that will enhance your songwriting and improvisation skills across various musical genres.</p>
+                            <a href="./blog/common-chord-progressions.html" class="text-blue-600 hover:text-blue-800 font-semibold">Read More →</a>
+                        </div>
+                    </article>
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-green-600">
+                        <img src="./images/ear-training.jpg" alt="Ear Training" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">11 Ear Training Exercises to Improve Your Musical Skills</h3>
+                            <p class="text-gray-600 mb-4">Enhance your ability to recognize chords, intervals, and melodies with these practical ear training techniques.</p>
+                            <a href="./blog/ear-training-exercises.html" class="text-blue-600 hover:text-blue-800 font-semibold">Read More →</a>
+                        </div>
+                    </article>
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-purple-600">
+                        <img src="./images/borrowed-chords.jpg" alt="Borrowed Chords" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Explore Borrowed Chords</h3>
+                            <p class="text-gray-600 mb-4">Learn how to use the Chord Colors app to experiment with borrowed chords and expand your harmonic palette.</p>
+                            <a href="./blog/learn-borrowed-chords.html" class="text-blue-600 hover:text-blue-800 font-semibold">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-between items-center">
+              <div class="w-full md:w-auto mb-4 md:mb-0">
+                  <img src="./images/logo_footer.png" alt="Chord Colors Logo" class="h-8 mb-2">
+                  <p class="text-sm text-gray-400">Made with ❤️ by <a href="https://linkedin.com/in/rossnmiller/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300">Ross Miller</a> in Nashville, TN</p>
+              </div>
+              <div class="w-full md:w-auto flex flex-wrap justify-center md:justify-end">
+                  <a href="#features" class="text-gray-400 hover:text-white mx-3 my-1">Features</a>
+                  <a href="#download" class="text-gray-400 hover:text-white mx-3 my-1">Download</a>
+                  <a href="#blog" class="text-gray-400 hover:text-white mx-3 my-1">Blog</a>
+                  <a href="#" class="text-gray-400 hover:text-white mx-3 my-1">Privacy Policy</a>
+                  <a href="#" class="text-gray-400 hover:text-white mx-3 my-1">Terms of Service</a>
+                  <a href="https://github.com/rsml/chordcolors" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white mx-3 my-1">
+                      <svg class="w-6 h-6 inline" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  </a>
+              </div>
+          </div>
       </div>
-      <p class="mt-4 text-sm">
-        Made with ❤️ by <a href="https://linkedin.com/in/rossnmiller/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300">Ross Miller</a> in Nashville, TN
-      </p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
