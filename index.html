@@ -36,11 +36,7 @@
             font-family: 'Inter', sans-serif;
         }
         .feature-box {
-            transition: all 0.3s ease-out;
-        }
-        .feature-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease-out;
         }
         .custom-button {
             transition: all 0.3s ease;
@@ -54,6 +50,24 @@
             color: #333333 !important;
         }
     </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const featureBoxes = document.querySelectorAll('.feature-box');
+
+        featureBoxes.forEach(box => {
+            box.addEventListener('mouseenter', function() {
+                const randomRotation = (Math.random() - 0.5) * 2; // Random value between -1 and 1
+                this.style.transform = `translateY(-3px) scale(1.01) rotate(${randomRotation}deg)`;
+                this.style.boxShadow = '0 6px 12px rgba(0,0,0,0.1)';
+            });
+
+            box.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1) rotate(0deg)';
+                this.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+            });
+        });
+    });
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <header class="container bg-[#FFF9F4] mx-auto px-4 py-6 flex justify-between items-center">
@@ -77,7 +91,7 @@
                 <div class="max-w-4xl mx-auto text-center">
                     <img id="large-logo" class="mx-auto mb-8" src="./images/icon-small.png" class="mb-2">
                     <h1 class="text-5xl font-bold mb-6 text-gray-900">Unleash Your Creativity</h1>
-                    <p class="text-xl mb-10 text-gray-600">Explore music theory interactively – Packed with features for all skill levels</p>
+                    <p class="text-xl mb-10 text-gray-600">Explore music theory interactively.<br />There's so much to explore regardless of your skill level</p>
                     <div class="flex justify-center space-x-4">
                         <a href="https://itunes.apple.com/app/id1422598441" class="custom-button bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 font-bold text-xl">
                             Download
@@ -142,24 +156,27 @@
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-bold mb-12 text-center">Music Theory Blog</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <article class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-blue-600">
-                        <div class="p-6">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-blue-600 flex">
+                        <div class="p-6 flex flex-col flex-1">
                             <h3 class="font-bold text-xl mb-2">9 Chord Progressions Every Musician Should Know</h3>
                             <p class="text-gray-600 mb-4">Discover essential chord progressions that will enhance your songwriting and improvisation skills across various musical genres.</p>
+                            <div class="flex-1 text-sm">&nbsp;</div>
                             <a href="./blog/common-chord-progressions.html" class="text-blue-600 hover:text-blue-800 font-semibold">Read More →</a>
                         </div>
                     </article>
-                    <article class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-green-600">
-                        <div class="p-6">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-green-600 flex">
+                        <div class="p-6 flex flex-col flex-1">
                             <h3 class="font-bold text-xl mb-2">11 Ear Training Exercises to Improve Your Musical Skills</h3>
                             <p class="text-gray-600 mb-4">Enhance your ability to recognize chords, intervals, and melodies with these practical ear training techniques.</p>
+                            <div class="flex-1 text-sm">&nbsp;</div>
                             <a href="./blog/ear-training-exercises.html" class="text-blue-600 hover:text-blue-800 font-semibold">Read More →</a>
                         </div>
                     </article>
-                    <article class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-purple-600">
-                        <div class="p-6">
+                    <article class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-purple-600 flex">
+                        <div class="p-6 flex flex-col flex-1">
                             <h3 class="font-bold text-xl mb-2">Explore Borrowed Chords</h3>
                             <p class="text-gray-600 mb-4">Learn how to use the Chord Colors app to experiment with borrowed chords and expand your harmonic palette.</p>
+                            <div class="flex-1 text-sm">&nbsp;</div>
                             <a href="./blog/learn-borrowed-chords.html" class="text-blue-600 hover:text-blue-800 font-semibold">Read More →</a>
                         </div>
                     </article>
