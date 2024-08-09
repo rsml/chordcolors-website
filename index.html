@@ -49,6 +49,21 @@
         .text-gray-900 {
             color: #333333 !important;
         }
+        @media (max-width: 768px) {
+            #hero-section {
+                padding-top: 30px !important;
+            }
+        }
+        @media (max-width: 560px) {
+            #hero-section {
+                padding-top: 20px !important;
+            }
+        }
+        @media (max-width: 340px) {
+            #hero-section {
+                padding-top: 0px !important;
+            }
+        }
     </style>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -71,17 +86,17 @@
 </head>
 <body class="bg-gray-50 text-gray-900">
     <header class="container bg-[#FFF9F4] mx-auto px-4 py-6 flex justify-between items-center">
-        <div class="flex items-center">
-            <div class="flex flex-row justify-center items-center mb-2">
+        <div class="flex items-center justify-center">
+            <div class="flex flex-row justify-center items-center">
               <!-- <img src="./images/logo_header_final.png" alt="Chord Colors Logo" class="h-12 w-12 mr-1">  -->
               <span class="font-bold text-2xl text-gray-900">Chord Colors</span>
             </div>
 
         </div>
         <nav>
-            <a href="#features" class="text-gray-600 hover:text-gray-900 mx-4">Features</a>
+            <!-- <a href="#features" class="text-gray-600 hover:text-gray-900 mx-4">Features</a> -->
             <a href="#download" class="text-gray-600 hover:text-gray-900 mx-4">Download</a>
-            <a href="#blog" class="text-gray-600 hover:text-gray-900 mx-4">Blog</a>
+            <!-- <a href="#blog" class="text-gray-600 hover:text-gray-900 mx-4">Blog</a> -->
         </nav>
     </header>
 
